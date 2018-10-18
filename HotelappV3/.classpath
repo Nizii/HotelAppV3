@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/commons-collections4-4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/jxl-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/mysql-connector-java-5.1.45-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-ooxml-schemas-3.17 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/poi-scratchpad-3.17 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/rs2xml.jar"/>
+	<classpathentry kind="lib" path="C:/Users/bachelor/Desktop/Web-Projekte/Hotelapp/Jars/Externe Jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

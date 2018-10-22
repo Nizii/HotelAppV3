@@ -11,6 +11,10 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import java.awt.Color;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class Room {
 
 	private JFrame frame;

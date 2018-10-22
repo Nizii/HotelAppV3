@@ -11,6 +11,10 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class Excel {
 	private static ArrayList<String> list = new ArrayList<>();
 	private static Map<Integer, String[]> roomData = new TreeMap<Integer, String[]>();

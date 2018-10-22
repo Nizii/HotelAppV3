@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class CustomerModel {
 	private static Controller controller;
 

@@ -10,6 +10,10 @@ import java.util.TreeMap;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class RoomModel {
 	private static Map<Integer, String[]> roomData = new TreeMap<Integer, String[]>();
 

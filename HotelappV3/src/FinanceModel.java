@@ -2,6 +2,10 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class FinanceModel {
 	private static Controller controller;
 	private static String categoryString;

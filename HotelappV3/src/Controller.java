@@ -17,6 +17,14 @@ import javax.swing.table.TableModel;
 
 import net.proteanit.sql.DbUtils;
 
+/**
+* Herr Wanner
+* Hier im Conroller finden Sie die SQL Queryfunktionen so wie die Funktion getConnection und closeConnection.
+* Bitte entschuldigen Sie meine Rechtsschreibung in den Kommentaren
+*
+* @author  Özdemir Nizam
+*/
+
 public class Controller {
 	private static Connection con = null;
 	private static String dbHost = "localhost"; // Hostname

@@ -29,11 +29,25 @@ import javax.swing.border.MatteBorder;
 import javax.swing.JScrollPane;
 import java.awt.Window.Type;
 
+/**
+* Herr Wanner schön das Sie sich die Zeit genommen haben rein zu schauen.
+* 
+* Dieses CRM System entwickle ich für die Eltern meiner Freundin die in Thailand leben und eine kleine Pension mit 30 Zimmern betreiben.
+* Mit diesem CRM System können Sie ihre Finanzen, Buchungen, Kunden und die Liegenschaft an sich verwalten. Sie können Quittungen, Buchungen und Kunden erfassen, bearbeiten oder löschen.
+* Zudem können Sie Räume erstellen bearbeiten oder löschen. Quittungen werden über Excel geöffnet. das habe ich mit Woorkbook gemacht.
+* Die Datenbankverbindung wird mit dem JDBC Treiber hergestellt aktuell local auf meinem PC.
+* Die MainclassView ist die Hauptklasse hier startet die App.
+* Hier in der MainclassView befindet sich das gesamte Frontend (Tabs, Tablellen Buttons Textfields usw.), diese kommuniziert über Funktionen mit den ModlerKlassen und diese Wiederum mit der Klasse Controller für die SQL Anfragen.
+* 
+* Leider habe ich noch keine Dokumentation erstellt. Ich würde ihnen aber gerne bei Interesse das System live zeigen im Zulassungsgespräch.
+*
+* Bitte entschuldigen Sie meine Rechtsschreibung in den Kommentaren
+*
+* @author  Özdemir Nizam
+*/
+
 public class MainclassView {
 
-	/*
-	 * private FinanceModel fm; private BookingModel bm; private CustomerModel cm;
-	 */
 	private static JFrame frmSspGroupApp;
 	static JTable outputTable;
 	static JTable bookingTable;
@@ -48,11 +62,9 @@ public class MainclassView {
 	private static String jComboBoxItem;
 	private static String jComboBoxItemRoom;
 	private static String jComboBoxItemRoomStatus;
-	
 	private static String jComboBoxItemDayCustomer;
 	private static String jComboBoxItemMonthCustomer;
 	private static String jComboBoxItemYearCustomer;
-	
 	private static JTextField tfCustomerId;
 	private static JTextField tfCustomerFirstname;
 	private static JTextField tfCustomerLastname;

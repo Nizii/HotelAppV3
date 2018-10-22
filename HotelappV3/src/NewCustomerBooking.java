@@ -20,6 +20,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 import java.awt.Window.Type;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class NewCustomerBooking {
 
 	private static Controller controller = new Controller();

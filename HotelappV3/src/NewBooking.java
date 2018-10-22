@@ -21,6 +21,10 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextPane;
 import java.awt.Window.Type;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class NewBooking {
 
 	JFrame frmBookingFormular;

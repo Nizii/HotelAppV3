@@ -19,6 +19,10 @@ import javax.swing.JTextPane;
 import com.toedter.calendar.IDateEditor;
 import com.toedter.calendar.JDateChooser;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class UpdateBooking {
 
 	private JFrame frame;

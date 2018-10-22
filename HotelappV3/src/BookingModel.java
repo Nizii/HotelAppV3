@@ -14,6 +14,10 @@ import java.util.TreeMap;
 import javax.swing.JOptionPane;
 import javax.swing.table.TableModel;
 
+/*
+* @author  Özdemir Nizam
+*/
+
 public class BookingModel {
 	private static ArrayList<String> list = new ArrayList<>();
 	private static Controller controller;

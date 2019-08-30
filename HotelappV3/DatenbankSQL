@@ -1,0 +1,199 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Erstellungszeit: 09. Jul 2018 um 13:22
+-- Server-Version: 10.1.16-MariaDB
+-- PHP-Version: 7.0.9
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Datenbank: `hoteldb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `booking`
+--
+
+CREATE TABLE `booking` (
+  `booking_id` int(20) NOT NULL,
+  `firstname` varchar(120) DEFAULT NULL,
+  `lastname` varchar(120) DEFAULT NULL,
+  `nationality` varchar(120) DEFAULT NULL,
+  `street` varchar(120) DEFAULT NULL,
+  `zip` varchar(120) DEFAULT NULL,
+  `city` varchar(120) DEFAULT NULL,
+  `country` varchar(120) DEFAULT NULL,
+  `email` varchar(120) DEFAULT NULL,
+  `deposit` int(20) DEFAULT NULL,
+  `birthdate` date DEFAULT NULL,
+  `days` int(20) DEFAULT NULL,
+  `room` varchar(20) DEFAULT NULL,
+  `startdate` date DEFAULT NULL,
+  `enddate` date DEFAULT NULL,
+  `status` varchar(8) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `booking`
+--
+
+INSERT INTO `booking` (`booking_id`, `firstname`, `lastname`, `nationality`, `street`, `zip`, `city`, `country`, `email`, `deposit`, `birthdate`, `days`, `room`, `startdate`, `enddate`, `status`) VALUES
+(3, 'Testvorname', 'Testnachname', 'Testland', 'Teststrasse', 'Testzip', 'Zürich', 'Testland', 'Testemail', 2000, '1979-02-02', 5, '101', '2019-07-20', '2018-12-14', 'open'),
+(11, 'Nizam', 'KingKong', 'Testland', 'Teststrasse', 'Testzip', 'Bern', 'Zürich', 'Testland', 4754, '1979-02-02', 1, '101', '2018-02-01', '2018-03-31', 'closed'),
+(12, 'Hello', 'nothn', 'Testland', 'Teststrasse', 'Testzip', '', 'Zürich', 'Testzip', 999, '1979-02-02', 3, '101', '2018-02-01', '2018-02-10', 'closed'),
+(13, 'Salvo', 'Terzo', 'IT', 'Schulstrasse', '8989', 'Regensdorf', 'Schweiz', 'salvo@salvo.ch', 2500, '1979-02-02', 5, '101', '2018-02-01', '2018-02-10', 'closed'),
+(14, 'sad', 'saa', 'ssa', 'sa', 'sa', 'ad', 'a', 'a', 4444, '1979-02-02', 4, '101', '2018-06-28', '2018-06-30', 'closed'),
+(16, 'Nizam', 'KingKong', 'Testland', 'Teststrasse', 'Testzip', 'Bern', 'Zürich', 'Testland', 4754, '1979-02-02', 1, '101', '2018-02-01', '2018-02-02', 'closed'),
+(17, 'Salvo', 'Terzo', 'Italiener', 'Schulstrasse', '7878', 'Regensdorf', 'Schweiz', 'salvo@salvo.ch', 4000, '1979-02-02', 1, '101', '2018-07-14', '2018-07-28', 'open'),
+(18, 'Suki', 'Jovanovic', 'Serbien', 'Aemtlerstrasse', '8003', 'Zürich', 'Schweiz', 'suki@suki.ch', 1500, '1985-09-08', 2, '201', '2018-02-01', '2018-02-03', 'closed'),
+(19, 'Salvo', 'Terzo', 'Italiener', 'Schulstrasse', '8560', 'Regensdorf', 'Schweiz', 'salvo@salvo.ch', 5500, '1989-12-19', 4, '101', '2018-02-01', '2018-07-31', 'active'),
+(20, 'Adina', 'Bächli', 'Thai/Swiss', 'Kelleramt', '8905', 'Arni', 'Swiss', 'adina@adina.ch', 2500, '1995-05-31', 5, '101', '2018-02-10', '2018-02-20', 'closed'),
+(21, 'Peter', 'Pan', 'Deutscher', 'Dorfstr', '676289', 'Hamburg', 'Deutschland', 'peter@pan.ch', 3000, '1979-02-02', 10, '101', '2018-02-01', '2018-02-10', 'closed'),
+(22, 'Abra', 'Kadabra', 'Schotisch', 'Longstr', '976486', 'Herotown', 'Schotland', 'abra@kadabra.com', 2000, '1979-02-02', 5, '101', '2018-05-01', '2018-02-05', 'closed'),
+(23, 'Java', 'html', 'Schweizer', 'Programmierstr', '8004', 'Zürich', 'Schweiz', 'swiss@swiss.ch', 2000, '1979-02-02', 5, '101', '2018-02-01', '2018-02-04', 'closed'),
+(24, 'xxx', 'sdf', 'sfsdf', 'dsfsd', 'fsdfdsf', 'sdfs', 'dsf', 'sf', 3333, '1979-02-02', 3, '201', '2018-02-01', '2018-02-02', 'closed'),
+(27, 'qq', 'ww', 'eer', 'rr', 'tt', 'tt', 'tt', 'th', 8888, '1979-02-02', 1, '101', '2018-02-09', '2018-02-09', 'closed'),
+(29, 'sadsafdsfd', 'fsd', 'fsdfdsf', 'sdf', 'ds', 'fsdf', 'f', 'sdfds', 3333, '1979-02-02', 1, '101', '2018-02-01', '2018-02-02', 'closed'),
+(30, 'ccc', 'ccx', 'wer', 'wer', 'ewr', 'rew', 'ewrew', 'rew', 22222, '1979-02-02', 1, '101', '2018-02-01', '2018-08-16', 'active'),
+(31, 'setergtrh', 'hfg', 'hfgh', 'fghgfhgfh', 'gfhgf', 'ff', 'gfgf', 'gf', 44444, '1979-02-02', 2, '101', '2018-02-01', '2018-02-04', 'closed'),
+(33, 'www', 'www', 'www', 'www', 'www', 'www', 'www', 'www', 2000, '1979-02-02', 4, '101', '2018-06-28', '2018-06-29', 'closed'),
+(34, 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa', 22, '1979-02-08', 4, '101', '2018-06-28', '2018-07-29', 'active'),
+(35, 'rrrr', 'rrrr', 'rrrr', 'rrrr', 'rrrr', 'rrrr', 'rrrr', 'rrrr', 2000, '1979-02-02', 30, '301', '2018-06-28', '2018-09-21', 'active'),
+(36, 'ttt', 'ttt', 'ttt', 'ttt', 'ttt', 'ttt', 'ttt', 'ttt', 3000, '1979-02-02', 1, '101', '2018-07-23', '2018-07-30', 'open'),
+(37, 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 2000, '2018-06-30', 5, '101', '2018-05-09', '2018-08-31', 'active'),
+(38, 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 'ooo', 2000, '2018-06-30', 5, '101', '2018-05-09', '2018-08-31', 'active'),
+(39, 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 2000, '2018-02-01', 3, '101', '2018-05-08', '2018-09-20', 'active'),
+(40, 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 'xxx', 2000, '2018-02-01', 3, '101', '2018-05-08', '2018-09-20', 'active'),
+(41, 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 2000, '1979-02-02', 4, '101', '2018-05-21', '2018-09-21', 'active'),
+(42, 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 'vvv', 2000, '1979-02-02', 4, '101', '2018-05-21', '2018-09-21', 'active'),
+(43, 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 22222, '2018-06-18', 3, '101', '2018-06-11', '2018-09-14', 'active'),
+(44, 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 'lll', 22222, '2018-06-18', 3, '101', '2018-06-11', '2018-09-14', 'active'),
+(45, 'sss', 'sss', 'sss', 'sss', 'sss', 'sss', 'sss', 'sss', 2000, '1979-02-02', 1, '101', '2018-07-23', '2018-07-30', 'open'),
+(46, 'Lumi', 'Laga', 'Swiss', 'Kellerstr', '87687', 'Zürich', 'Schweiz', 'jsnsd@shsn.ch', 2000, '1989-12-19', 4, '101', '2018-05-08', '2018-03-30', 'closed'),
+(47, 'Lumi', 'Laga', 'Swiss', 'Kellerstr', '87687', 'Zürich', 'Schweiz', 'jsnsd@shsn.ch', 2000, '1989-12-19', 4, '101', '2018-05-08', '2018-03-30', 'closed'),
+(48, 'Taschen', 'Lampe', 'Deutscher', 'Dorfstr', '76567', 'Aarau', 'Deutschland', 'nsdsdn@gmx.ch', 5000, '2018-02-07', 4, '101', '2018-07-20', '2018-10-18', 'open'),
+(49, 'Nizam', 'Özdemir', 'Schweiz', 'Kelleramtstrasse 13', '8905', 'Arni', 'Schweiz', 'nizam.oezdemir@gmx.ch', 2000, '1979-02-02', 29, '101', '2018-06-28', '2018-10-10', 'active');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `customer`
+--
+
+CREATE TABLE `customer` (
+  `customer_nr` int(11) NOT NULL,
+  `firstname` varchar(120) NOT NULL,
+  `lastname` varchar(120) NOT NULL,
+  `nationality` varchar(120) NOT NULL,
+  `city` varchar(120) NOT NULL,
+  `street` varchar(120) NOT NULL,
+  `zip` varchar(120) NOT NULL,
+  `country` varchar(120) NOT NULL,
+  `email` varchar(120) NOT NULL,
+  `birthdate` date DEFAULT NULL,
+  `telefon` varchar(120) DEFAULT NULL,
+  `others` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `customer`
+--
+
+INSERT INTO `customer` (`customer_nr`, `firstname`, `lastname`, `nationality`, `city`, `street`, `zip`, `country`, `email`, `birthdate`, `telefon`, `others`) VALUES
+(6, 'Adina', 'Bächli', 'Swiss/Thai', 'Arni', 'Kelleramt', '8905', 'Swiss', 'adina@adina.ch', '1995-05-31', '079888888', 'none'),
+(8, 'Nizam', 'Özdemir', 'Schweizer', 'Arni', 'Kellerstr', '8888', 'Schweiz', 'nizam@nizam.ch', '1988-02-02', '0764040168', 'none'),
+(11, 'Peter', 'Pan', 'Deutscher', 'Hamburg', 'Dorfstr', '676289', 'Deutschland', 'peter@pan.ch', '1966-04-06', '0049(0)8889752', 'Gehbehinderung'),
+(13, 'Salvo', 'Terzo', 'Italiener', 'Regensdorf', 'Schulstrasse', '8560', 'Schweiz', 'salvo@salvo.ch', '1988-02-03', '046585245', 'dochwas');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `output`
+--
+
+CREATE TABLE `output` (
+  `output_nr` int(20) NOT NULL,
+  `amount` int(20) NOT NULL,
+  `description` varchar(120) NOT NULL,
+  `category` varchar(120) NOT NULL,
+  `output_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Daten für Tabelle `output`
+--
+
+INSERT INTO `output` (`output_nr`, `amount`, `description`, `category`, `output_date`) VALUES
+(16, 99, 'Busbilett', 'travel', '2018-01-12 20:48:45'),
+(20, 3000, 'Flug nach Koh Samui', 'travel', '2018-01-13 16:01:18'),
+(21, 250, 'Sunalong', 'food', '2018-02-20 15:49:44'),
+(22, 525, 'Big C', 'food', '2018-02-20 15:49:57'),
+(23, 1500, 'Bett', 'travel', '2018-02-20 15:50:13'),
+(24, 2000, 'Peninsula Rest', 'food', '2018-02-20 15:50:57'),
+(26, 650, 'Big C', 'travel', '2018-02-20 15:51:36'),
+(27, 30, 'Suppe', 'food', '2018-02-20 15:51:55'),
+(28, 30, 'Suppe', 'food', '2018-02-20 15:52:06'),
+(29, 300, 'Taxi Pattaya', 'food', '2018-02-20 15:52:25'),
+(30, 99, 'Cafe Central', 'food', '2018-02-20 15:52:35'),
+(31, 1200, 'Central Festival', 'other', '2018-02-20 15:53:07'),
+(33, 15000, 'Flug nach Zürich', 'food', '2018-02-22 15:57:31'),
+(34, 30, 'Suppe', 'business', '2018-02-22 15:58:37'),
+(35, 30, 'Suppe', 'food', '2018-02-22 15:58:42'),
+(36, 1200, 'Central Festival', 'household', '2018-02-22 16:35:07');
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`booking_id`);
+
+--
+-- Indizes für die Tabelle `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`customer_nr`);
+
+--
+-- Indizes für die Tabelle `output`
+--
+ALTER TABLE `output`
+  ADD PRIMARY KEY (`output_nr`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `booking_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+--
+-- AUTO_INCREMENT für Tabelle `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `customer_nr` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+--
+-- AUTO_INCREMENT für Tabelle `output`
+--
+ALTER TABLE `output`
+  MODIFY `output_nr` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

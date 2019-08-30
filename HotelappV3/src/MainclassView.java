@@ -1,16 +1,6 @@
 /**
-* Herr Wanner schön das Sie sich die Zeit genommen haben rein zu schauen.
-* 
-* Dieses CRM System entwickle ich für die Eltern meiner Freundin die in Thailand leben und eine kleine Pension mit 30 Zimmern betreiben.
-* Mit diesem CRM System können Sie ihre Finanzen, Buchungen, Kunden und die Liegenschaft an sich verwalten. Sie können Quittungen, Buchungen und Kunden erfassen, bearbeiten oder löschen.
-* Zudem können Sie Räume erstellen bearbeiten oder löschen. Quittungen werden über Excel geöffnet. das habe ich mit Woorkbook gemacht.
-* Die Datenbankverbindung wird mit dem JDBC Treiber hergestellt aktuell local auf meinem PC.
-* Die MainclassView ist die Hauptklasse hier startet die App.
-* Hier in der MainclassView befindet sich das gesamte Frontend (Tabs, Tablellen Buttons Textfields usw.), diese kommuniziert über Funktionen mit den ModlerKlassen und diese Wiederum mit der Klasse Controller für die SQL Anfragen.
-* 
-* Leider habe ich noch keine Dokumentation erstellt. Ich würde ihnen aber gerne bei Interesse das System live zeigen im Zulassungsgespräch.
 *
-* Bitte entschuldigen Sie meine Rechtsschreibung in den Kommentaren
+*Hauptklasse
 *
 * @author  Özdemir Nizam
 */
@@ -103,11 +93,11 @@ public class MainclassView {
 
 	// Erstellt die APP
 	public MainclassView() throws SQLException, ParseException {
+		//Erstellt das GUI für die APP
 		initialize();
 
-		// Füllt alle Tabellen mit den Daten aus der Datenbank, dabei wird mit diesen
-		// Methoden jeweils der Prozess dazu ausgelöst in der Klasse BookingModel und
-		// Finance Model
+		// Füllt alle Tabellen mit den Daten aus der Datenbank
+		// Aktualisiert die Tabellen
 		try {
 			BookingModel.refreshActiv();
 			RoomModel.refreshRoomStatus();
@@ -117,6 +107,8 @@ public class MainclassView {
 			RoomModel.getRoomTableDataFromSql(4); //Füllt roomTable in Controller
 			RoomModel.getRoomTableDataFromSql(5); //Füllt nextCustomerTable in Controller
 		} catch (Exception e) {
+			
+			// Falls Verbindung zu DB scheitert wird APP beendet
 			e.printStackTrace();
 			JOptionPane.showMessageDialog(null, "Keine Verbindung zur Datenbank möglich!");
 			System.exit(0);
@@ -124,7 +116,7 @@ public class MainclassView {
 	}
 
 	/*
-	 * Getter/Setter FINANCE
+	 * Getter/Setter Methoden für TAB FINANCE
 	 */
 
 	public static void setTfOutputNr(String text) {
@@ -172,7 +164,7 @@ public class MainclassView {
 	}
 
 	/*
-	 * Getter/Setter CUSTOMER
+	 * Getter/Setter Methoden für TAB CUSTOMER
 	 */
 
 	public static int getTfCustomerId() {
@@ -440,7 +432,7 @@ public class MainclassView {
 			// oder ein INSERT gemacht werden soll
 			public void actionPerformed(ActionEvent e) {
 				RoomModel.checkComboboxRoom(comboBoxRoom.getSelectedItem().toString(),
-						comboBoxRoomStatus.getSelectedItem().toString(), 1);
+				comboBoxRoomStatus.getSelectedItem().toString(), 1);
 				comboBoxRoom.setSelectedIndex(0);
 				comboBoxRoomStatus.setSelectedIndex(0);
 			}
